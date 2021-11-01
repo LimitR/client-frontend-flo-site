@@ -9,6 +9,7 @@ import {BrowserRouter, Route, Router} from 'react-router-dom'
 import UserPage from "./components/UserPage";
 import UbautPage from "./components/ubautPage";
 import ProductPage from "./components/ProductPage";
+import CreateProductPage from "./components/CreateProductPage";
 
 const App = () => {
     const [product, setProduct] = useState<IProduct[]>([])
@@ -32,6 +33,9 @@ const App = () => {
               </Route>
               <Route path={'/product/:id'} exact>
                 <ProductPage></ProductPage>
+              </Route>
+              <Route path={'/add'}>
+                  <CreateProductPage></CreateProductPage>
               </Route>
           </div>
       </BrowserRouter>

@@ -30,7 +30,7 @@ const ProductPage: FC = () => {
 
     console.log(product)
     return (
-        <div   key={product?.id} >
+        <div key={product?.id} >
             <img className='img_card_style' src={'http://localhost:5000/' + product?.img}/>
             <p>Название: {product?.title}</p>
             <p>Цена: {product?.prise} рублей</p>

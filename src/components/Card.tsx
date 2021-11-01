@@ -24,9 +24,9 @@ const Card: React.FC<CardProps> = ({
         <div style={{width, height,
             border: variant === CardVariant.outlined ? '1px solid grey' : 'none',
             background: variant === CardVariant.primary ? 'lightgray': ''
-        }}
-
-        >
+        }}>
+            <a href={'/'}>Главная</a>
+            <a href={'/add'}>Создать товар</a>
             {children}
         </div>
     )

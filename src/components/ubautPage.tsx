@@ -1,9 +1,11 @@
 import React, {FC} from 'react';
+import CreateProductClass from "./CreateProductPage";
 
 const UbautPage: FC = () => {
+
     return (
         <div>
-            TEXT
+            <CreateProductClass></CreateProductClass>
         </div>
     );
 };
